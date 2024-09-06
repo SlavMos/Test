@@ -1,0 +1,7 @@
+/* ProductInfo.module.css или аналогичный файл */
+.productImage {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px; /* Установите нужную высоту */
+  object-fit: cover; /* Обрезка изображения для сохранения пропорций */
+}

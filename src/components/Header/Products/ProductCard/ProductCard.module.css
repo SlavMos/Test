@@ -1,0 +1,59 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 10px;
+}
+
+.name {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  height: 50px; /* Ограничение высоты для равномерных карточек */
+  overflow: hidden; /* Обрезка текста */
+  text-overflow: ellipsis; /* Добавление многоточия для длинного текста */
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likeBtn,
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.likeBtn:hover,
+.deleteBtn:hover {
+  color: #007bff;
+}
+.favorite {
+  cursor: pointer;
+}
