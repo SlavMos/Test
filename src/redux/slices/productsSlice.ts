@@ -1,22 +1,6 @@
-// redux/productsSlice.ts
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
-
-// Интерфейсы для продуктов
-interface Product {
-  id: number;
-  name: string;
-  description: string;
-  image: string;
-  liked: boolean;
-  price: number;
-}
-
-interface ProductsState {
-  items: Product[];
-  status: "idle" | "loading" | "succeeded" | "failed";
-  showFavorites: boolean;
-}
+import { Product, ProductsState } from "../types";
 
 // Начальное состояние
 const initialState: ProductsState = {
